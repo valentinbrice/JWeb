@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="PostgreSQL( Local Connection ) - JBDDWEB@localhost" uuid="31680be5-e905-43eb-b3cf-1084a4bd9fe1">
+    <database-info product="PostgreSQL" version="9.3.3" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <schema name="public" catalog="JBDDWEB"/>
+    <table name="Category" schema="public" catalog="JBDDWEB" type="TABLE">
+      <column name="id" sqlType="int4" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="nom" sqlType="text" length="2147483647" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="Category_pkey" columns="id"/>
+      <exported-key name="category" table="article" schema="public" catalog="JBDDWEB" columns="category"/>
+    </table>
+    <table name="article" schema="public" catalog="JBDDWEB" type="TABLE">
+      <column name="id" sqlType="int4" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="nom" sqlType="text" length="2147483647" precision="0" nullable="true" jdbcType="12"/>
+      <column name="prix" sqlType="numeric" length="131089" precision="0" nullable="true" jdbcType="2"/>
+      <column name="stock" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="category" sqlType="int4" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="description" sqlType="text" length="2147483647" precision="0" nullable="true" jdbcType="12"/>
+      <column name="photo" sqlType="text" length="2147483647" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="id" columns="id"/>
+      <foreign-key name="category" columns="category" ref-table="Category" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fki_category" unique="false" columns="category"/>
+    </table>
+  </data-source>
+</component>

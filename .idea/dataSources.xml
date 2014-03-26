@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1868213494">
+    <data-source source="LOCAL" name="PostgreSQL( Local Connection ) - JBDDWEB@localhost" uuid="31680be5-e905-43eb-b3cf-1084a4bd9fe1">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/JBDDWEB</jdbc-url>
+      <user-name>vbrice</user-name>
+      <user-password>df98df99dfc4dfcfdfd9dfc0dfc5dfd9dfcfdfea</user-password>
+      <schema-pattern>JBDDWEB.public</schema-pattern>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
